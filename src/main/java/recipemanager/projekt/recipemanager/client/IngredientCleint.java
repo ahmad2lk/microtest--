@@ -20,7 +20,6 @@ public interface IngredientCleint {
     List<IngredientResponse> findAllIngredientsByRecipe(@RequestHeader("Authorization") String jwtToken, @PathVariable("recipe-id") Long recipeId);
 
 
-
     @GetMapping("/all")
     List<IngredientResponse> findAllIngredient(@RequestHeader("Authorization") String jwtToken);
 
